@@ -23,12 +23,12 @@
   background-color: rgba(194, 137, 94, 0.75);
 }
 
-.rotating-image {
+/* .rotating-image {
   width: 128;
   height: 128;
   margin: 15px 15px 15px 15px;
   animation: rotate 15s linear infinite;
-}
+} */
 
 .swinging-image {
   width: 128;
@@ -37,31 +37,14 @@
   animation: swing 1.5s cubic-bezier(0.77, 0, 0.18, 1) infinite;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
-
-@keyframes swing {
-  0% {
-    transform: rotate(45deg);
-  }
-  50% {
-    transform: rotate(-45deg);
-  }
-
-  100% {
-    transform: rotate(45deg);
-  }
-}
-@font-face {
-  font-family: Nunito;
-  src: url(assets/fonts/Nunito-Regular.woff2);
-}
+} */
 
 body {
   background-image: url(./assets/images/bg.png);
@@ -84,4 +67,23 @@ div {
   border-width: 3px;
 }
 
-.pikcursor {cursor: url(assets/images/pikmin.cur),auto;}
+.pikcursor {
+  cursor: url(assets/images/pikmin.cur), auto;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@font-face {
+  font-family: Nunito;
+  src: url(assets/fonts/Nunito-Regular.woff2);
+}

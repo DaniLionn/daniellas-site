@@ -3,5 +3,5 @@
 function sortMethod(sortType) {
   var steamFrame = document.getElementById("steamgames-iframe");
   steamFrame.src =
-    "https://prideislandapi.onrender.com/website/steamgames?sort=" + sortType;
+    "https://dani-backend-apis.onrender.com/website/steamgames?sort=" + sortType;
 }

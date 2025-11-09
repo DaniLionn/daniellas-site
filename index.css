@@ -11,14 +11,14 @@
 .sidebar {
   grid-area: sidebar;
   outline-style: outset;
-  outline-color: rgb(247, 216, 232);
+  outline-color: rgb(255, 175, 217);
   outline-width: 3px;
   background-color: rgba(247, 216, 232, 0.75);
 }
 .body {
   grid-area: body;
   outline-style: outset;
-  outline-color: rgb(247, 216, 232);
+  outline-color: rgb(255, 175, 217);
   outline-width: 3px;
   background-color: rgba(247, 216, 232, 0.75);
 }
@@ -56,19 +56,32 @@ div {
 .steamgames-iframe {
   width: 99%;
   border-style: inset;
-  border-color: rgb(247, 216, 232);
+  border-color: rgb(255, 175, 217);
   border-width: 3px;
+    border-radius: 5px;
+
+}
+.riitag {
+    border-style: inset;
+  border-color: rgb(255, 175, 217);
+  border-width: 3px;
+    border-radius: 5px;
 }
 .messenger {
   border-style: inset;
-  border-color: rgb(247, 216, 232);
+  border-color: rgb(255, 175, 217);
   background-color: rgb(255, 255, 255);
   margin: 5px 5px 5px 5px;
   border-width: 3px;
+    border-radius: 5px;
 }
 
 .pikcursor {
   cursor: url(assets/images/pikmin.cur), auto;
+}
+
+img {
+  border-radius: 5px;
 }
 
 @keyframes swing {

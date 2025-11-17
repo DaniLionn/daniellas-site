@@ -1,3 +1,11 @@
+:root {
+  --primary-color-light: rgb(255, 175, 217);
+  --primary-color-light-secondary: rgba(247, 216, 232, 0.75);
+  --primary-color-dark: rgb(146, 0, 75);
+  --primary-color-dark-secondary: rgba(122, 0, 63, 0.75);
+  --dark-background: rgb(117, 0, 55);
+}
+
 .layout {
   width: 100%;
 
@@ -8,19 +16,120 @@
   gap: 8px;
 }
 
-.sidebar {
-  grid-area: sidebar;
-  outline-style: outset;
-  outline-color: rgb(255, 175, 217);
-  outline-width: 3px;
-  background-color: rgba(247, 216, 232, 0.75);
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    grid-area: sidebar;
+    outline-style: outset;
+    outline-color: var(--primary-color-dark);
+    outline-width: 3px;
+    background-color: var(--primary-color-dark-secondary);
+  }
+  .body {
+    grid-area: body;
+    outline-style: outset;
+    outline-color: var(--primary-color-dark);
+    outline-width: 3px;
+    background-color: var(--primary-color-dark-secondary);
+  }
+  .steamgames-iframe {
+    width: 99%;
+    border-style: inset;
+    border-color: var(--primary-color-dark);
+    background-color: var(--dark-background);
+    border-width: 3px;
+    border-radius: 5px;
+  }
+  .riitag {
+    border-style: inset;
+    border-color: var(--primary-color-dark);
+    border-width: 3px;
+    border-radius: 5px;
+  }
+  .messenger {
+    border-style: inset;
+    border-color: var(--primary-color-dark);
+    color: white;
+    background-color: var(--dark-background);
+    margin: 5px 5px 5px 5px;
+    border-width: 3px;
+    border-radius: 5px;
+  }
+  p {
+    color: white;
+  }
+  h1 {
+    color: white;
+  }
+  h2 {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+  h4 {
+    color: white;
+  }
+  h5 {
+    color: white;
+  }
+
+  h6 {
+    color: white;
+  }
+
+  a {
+    color: powderblue;
+  }
+
+  body {
+    background-image: url(./assets/images/bg-dark.png);
+  }
+
+  label {
+    color: white;
+  }
 }
-.body {
-  grid-area: body;
-  outline-style: outset;
-  outline-color: rgb(255, 175, 217);
-  outline-width: 3px;
-  background-color: rgba(247, 216, 232, 0.75);
+
+@media (prefers-color-scheme: light) {
+  .sidebar {
+    grid-area: sidebar;
+    outline-style: outset;
+    outline-color: var(--primary-color-light);
+    outline-width: 3px;
+    background-color: var(--primary-color-light-secondary);
+  }
+  .body {
+    grid-area: body;
+    outline-style: outset;
+    outline-color: var(--primary-color-light);
+    outline-width: 3px;
+    background-color: var(--primary-color-light-secondary);
+  }
+  .steamgames-iframe {
+    width: 99%;
+    border-style: inset;
+    border-color: var(--primary-color-light);
+    background-color: var(--primary-color-light);
+    border-width: 3px;
+    border-radius: 5px;
+  }
+  .riitag {
+    border-style: inset;
+    border-color: var(--primary-color-light);
+    border-width: 3px;
+    border-radius: 5px;
+  }
+  .messenger {
+    border-style: inset;
+    border-color: var(--primary-color-light);
+    background-color: var(--primary-color-light);
+    margin: 5px 5px 5px 5px;
+    border-width: 3px;
+    border-radius: 5px;
+  }
+  body {
+    background-image: url(./assets/images/bg.png);
+  }
 }
 
 /* .rotating-image {
@@ -46,34 +155,8 @@
   }
 } */
 
-body {
-  background-image: url(./assets/images/bg.png);
-}
-
 div {
   font-family: Nunito;
-}
-.steamgames-iframe {
-  width: 99%;
-  border-style: inset;
-  border-color: rgb(255, 175, 217);
-  border-width: 3px;
-    border-radius: 5px;
-
-}
-.riitag {
-    border-style: inset;
-  border-color: rgb(255, 175, 217);
-  border-width: 3px;
-    border-radius: 5px;
-}
-.messenger {
-  border-style: inset;
-  border-color: rgb(255, 175, 217);
-  background-color: rgb(255, 255, 255);
-  margin: 5px 5px 5px 5px;
-  border-width: 3px;
-    border-radius: 5px;
 }
 
 .pikcursor {

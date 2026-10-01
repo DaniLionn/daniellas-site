@@ -7,26 +7,11 @@
     <title>Daniella's Site</title>
   </head>
   <body>
-    <audio
-      id="rockpikmin1"
-      src="https://danilionn.github.io/daniellas-site/assets/audio/rockpikmin1.mp3"
-    ></audio>
-    <audio
-            id="rockpikmin2"
-            src="https://danilionn.github.io/daniellas-site/assets/audio/rockpikmin2.mp3"
-    ></audio>
-    <audio
-            id="rockpikmin3"
-            src="https://danilionn.github.io/daniellas-site/assets/audio/rockpikmin3.mp3"
-    ></audio>
-    <audio
-            id="rockpikmin4"
-            src="https://danilionn.github.io/daniellas-site/assets/audio/rockpikmin4.mp3"
-    ></audio>
-    <audio
-      id="borse"
-      src="https://danilionn.github.io/daniellas-site/assets/audio/borse.mp3"
-    ></audio>
+    <audio id="rockpikmin1" src="https://danilionn.github.io/daniellas-site/assets/audio/pikmin_noises/rockPikmin1.mp3"></audio>
+    <audio id="rockpikmin2" src="https://danilionn.github.io/daniellas-site/assets/audio/pikmin_noises/rockPikmin2.mp3"></audio>
+    <audio id="rockpikmin3" src="https://danilionn.github.io/daniellas-site/assets/audio/pikmin_noises/rockPikmin3.mp3"></audio>
+    <audio id="rockpikmin4" src="https://danilionn.github.io/daniellas-site/assets/audio/pikmin_noises/rockPikmin4.mp3"></audio>
+    <audio id="borse" src="https://danilionn.github.io/daniellas-site/assets/audio/borse.mp3"></audio>
     <section class="layout">
       <div class="sidebar">
         <h2 style="margin: 5px">Links</h2>
@@ -40,59 +25,33 @@
           <a href="https://en.pronouns.page/@dani_lionn">Pronouns.page</a>
         </p>
         <p style="margin: 5px">
-          <a href="https://steamcommunity.com/profiles/76561199443331615"
-            >Steam</a
-          >
+          <a href="https://steamcommunity.com/profiles/76561199443331615">Steam</a>
         </p>
       </div>
       <div class="body">
         <h1>Welcome to my site!</h1>
         <h2>Hi. I&#39;m Daniella! (she/her)</h2>
-        <img
-          class="swinging-image"
-          src="./assets/images/rockpikmin.png"
-          onclick="randomPikminSound()"
-          width="120px"
-          height="150px"
-          cursor="pointer"
-        />
-
-        <img
-          src="./assets/images/transfem-trans-rights.gif"
-          title="i'm a trans girl :3"
-          cursor="pointer"
-        />
-
+        <img class="swinging-image" src="./assets/images/rockpikmin.png" onclick="randomPikminSound()" width="120px" height="150px" cursor="pointer" />
+        <img src="./assets/images/transfem-trans-rights.gif" title="i'm a trans girl :3" cursor="pointer" />
         <div class="messenger" style="float: right">
           <h3 style="margin: 5px">Send me a message!</h3>
-          <form
-            style="margin: 5px"
-            method="GET"
-            action="https://dani-backend-apis.onrender.com/website/message"
-          >
+          <form style="margin: 5px" method="GET" action="https://dani-backend-apis.onrender.com/website/message">
             <label for="name">Enter your name</label>
-            <input type="text" id="name" name="name" required /><br /><br />
+            <input type="text" id="name" name="name" required />
+            <br />
+            <br />
             <label for="message">Enter the message</label>
-            <input
-              type="text"
-              id="message"
-              name="message"
-              required
-            /><br /><br />
+            <input type="text" id="message" name="message" required />
+            <br />
+            <br />
             <input type="submit" value="Submit" />
           </form>
         </div>
         <p>I'm 19 years old!</p>
-        <p>
-          I&#39;ve been coding since early 2022 and hope to get a job in
-          computer science eventually!
-        </p>
-        <p>
-          I&#39;m into Nintendo console homebrew, and I'd like to eventually
-          <br />
-          learn how to make homebrew for the Wii!
-        </p>
-        <div class="steamgames-riitag" style="float: right; margin: 5px">
+        <p> I&#39;ve been coding since early 2022 and hope to get a job in computer science eventually! </p>
+        <p>Some games I like are Animal Crossing, Pokemon, Splatoon, Rhythm Heaven and Pikmin. </p>
+        <p> I add stuff from this site from time to time, so feel free to come back again.</p>
+        <div class="steamgames-switch-presence" style="float: right; margin: 5px">
           <h3>Games I own on Steam!</h3>
           <form>
             <label for="sort">Sorting method</label>
@@ -100,112 +59,27 @@
               <option value="name">Alphabetical</option>
               <option value="playtime">Playtime</option>
             </select>
-            <br /><br />
+            <br />
+            <br />
           </form>
-          <iframe
-            src="https://dani-backend-apis.onrender.com/website/steamgames?sort=name"
-            class="steamgames-iframe"
-            id="steamgames-iframe"
-          ></iframe>
-          <h3>My RiiTag!</h3>
-          <a href="https://riitag.t0g3pii.de/user/599641108116406300"
-            ><img
-              class="riitag"
-              src="https://riitag.t0g3pii.de/599641108116406300/tag.png"
-              alt="RiiTag"
-          /></a>
+          <iframe src="https://dani-backend-apis.onrender.com/website/steamgames?sort=name" class="steamgames-iframe" id="steamgames-iframe"></iframe>
+          <br />
+          <br />
+          <h3>Here's what I'm currently playing on my Switch!</h3>
+          <picture>
+            <source srcset="https://nxapi-presence.fancy.org.uk/api/presence/cc63b80b5e6d8739/embed?include-splatoon3=1&#38;theme=dark&#38;friend-code=6402-6494-9416&#38;show-splatoon3-fest-team=1" media="(prefers-color-scheme: dark)" />
+            <img src="https://nxapi-presence.fancy.org.uk/api/presence/cc63b80b5e6d8739/embed?include-splatoon3=1&#38;theme=light&#38;friend-code=6402-6494-9416&#38;show-splatoon3-fest-team=1" alt="Nintendo Switch presence" />
+          </picture>
         </div>
         <br />
-        <!-- <p>Here&#39;s some of my skills in coding stuff!</p>
-        <p>
-          <a href="https://skillicons.dev"
-            ><img
-              src="https://skillicons.dev/icons?i=lua,robloxstudio,js,nodejs,discordbots,discordjs,vscode&amp;perline=5"
-              alt="My Skills"
-          /></a>
-        </p>
-        <p>
-          <a href="https://github.com/prettier/prettier"
-            ><img
-              src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"
-              alt="code style: prettier"
-          /></a>
-        </p> -->
         <br />
         <br />
-        <div class="nintendo-friendcodes">
-          <h2>Have a Wii, DS/DSi/3DS or Switch? How about we become friends!</h2>
-          <p>Here's my Nintendo friend codes for Wii, DS and Switch.</p>
-          <p>
-            If you do end up friending me, remember to send me your friend code
-            <br />through the messaging box up above so I can friend you back!
-          </p>
-          <h2>Wii Codes</h2>
-          <h3>
-            Wii and DS online services were shut down back in 2014, <br />
-            but you can still use your Wii online through
-            <a href="https://wiimmfi.de/">Wiimmfi</a> and
-            <a href="https://wiilink.ca/">WiiLink</a>!
-
-            (THESE CODES NEED TO BE UPDATED! I'll get to that... eventually.)
-          </h3>
-
-          <h3>Wii Number</h3>
-          <p>4317 4757 5681 3249</p>
-          <h5>(Requires WiiLink)</h5>
-
-          <h3>Super Smash Bros. Brawl</h3>
-          <p>1122-7169-3787</p>
-          <h5>(Requires Wiimmfi or WiiLink WFC)</h5>
-
-          <h3>Animal Crossing: City Folk</h3>
-          <p>
-            Rosewick Daniella <br />
-            2583-0116-0426
-          </p>
-          <h5>(Requires Wiimmfi)</h5>
-
-          <h3>Mario Kart Wii</h3>
-          <p>2497-1128-9062</p>
-          <h5>(Requires Wiimmfi or WiiLink WFC)</h5>
-
-          <h2>DS Codes</h2>
-          <h3>Just like the Wii, DS games can also be played online through Wiimmfi!<br />For information on how to connect your DS to the internet and play online, read <a href="https://kaeru.world/projects/wfc">here.</a></h3>
-          <p>(Here's a tip! An easy way to set up a compatable internet connection for your DS is to set up a mobile hotspot on your phone, and set the security setting to either "WEP" or "Open". Just keep in mind that having it set to "Open" means there's no password for your hotspot, meaning other people could connect to it without needing a password.)</p>
-          <h3>Animal Crossing: Wild World</h3>
-          <p>
-            Cedarloc Daniella <br />
-            3184-3085-6550
-          </p>
-         
-          <h2>Switch Code</h2>
-          <h3>SW-6402-6494-9416</h3>
-        </div>
-        <!-- <p>
-          Background texture from
-          <a href="https://background-tiles.com/"
-            >https://background-tiles.com</a
-          >
-        </p> -->
-        <p>Shoutouts to these people! You guys are very cool :)</p>
-        <p>Fea</p>
-        <p>Malachi</p>
-        <p>Ordinary</p>
-        <p>Gus</p>
-        <p>Sam</p>
-        <p>Aster</p>
+        <h6>Shoutouts to these people! You guys are very cool :) <br />Fea <br />Malachi <br />Ordinary <br />Gus <br />Sam <br />Aster </h6>
       </div>
-  
       <div id="borse">
-        <img
-          src="assets/images/borse.jpg"
-          alt="borse.jpg"
-          onclick="playSound('borse')"
-        />
+        <img src="assets/images/borse.jpg" alt="borse.jpg" onclick="playSound('borse')" />
       </div>
     </section>
-
     <p>legends arceus 🤑🫰🫰🤑🤑</p>
   </body>
 </html>
-
